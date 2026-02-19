@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Anasayfa - Sigortam360</title>
+    <meta name="description" content="Araç ve sigorta sorgulamanın en hızlı ve güvenilir yolu!">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+<style>
+.od-badge img {
+    height: 60px;
+    width: auto;
+    display: block;
+}
+img {
+    vertical-align: middle;
+    border-style
+The style of the border around edges of an element.
+
+Önemli tarayıcılarda yaygın olarak kullanılabilir (Ocak 2018 tarihinden itibaren Baseline)
+Daha fazla bilgi
+
+Gösterme
+: none;
+}
+.od-badge {
+    position: fixed;
+    right: 18px;
+    bottom: 18px;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 20px;
+    background: #000000;
+    border: 2px solid rgba(255, 255, 255, .3);
+    border-radius: 16px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, .4);
+    text-decoration: none;
+    min-width: 300px;
+}
+a {
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+kullanıcı aracısı stil sayfası
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+}
+body, input, textarea, select, button {
+    font-synthesis: none;
+    -moz-font-feature-settings: 'kern';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+}
+:root {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+@media (min-width: 576px) and (max-width: 1199px) {
+    html {
+        font-size: calc(16px + (20 - 16) * ((100vw - 576px) / (1199 - 576)));
+    }
+}
+html {
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+::selection {
+    background-color: rgba(0, 151, 216, 1);
+    color: #fff;
+}
+::selection {
+    background-color: rgba(0, 151, 216, 1);
+    color: #fff;
+}
+::selection {
+    background-color: rgba(0, 151, 216, 1);
+    color: #fff;
+}
+
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Open Sans', sans-serif; background: #fff; color: #333; line-height: 1.6; }
+    
+    /* Top Bar */
+    .top-bar { background: #00a8e8; color: #fff; font-size: 13px; padding: 10px 0; }
+    .top-bar .container { width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+    .top-bar a { color: #fff; text-decoration: none; font-weight: 600; font-size: 14px; }
+    
+    /* Header */
+    header { background: #fff; padding: 15px 0; border-bottom: 1px solid #eee; }
+    header .container { width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+    
+    /* Logo */
+    .logo img { height: 60px; display: block; }
+    
+    /* Navigation */
+    nav ul { display: flex; list-style: none; gap: 40px; }
+    nav ul li { position: relative; }
+    nav ul li a { color: #555; text-decoration: none; font-size: 15px; font-weight: 400; padding: 20px 0; display: block; transition: color 0.3s; }
+    nav ul li a:hover { color: #00a8e8; }
+    
+    /* Dropdown */
+    .dropdown-content { 
+        display: none; 
+        position: absolute; 
+        top: 100%; 
+        left: 0; 
+        background: #fff; 
+        min-width: 320px; 
+        box-shadow: 0 5px 20px rgba(0,0,0,0.15); 
+        z-index: 1000;
+        border-radius: 4px;
+        padding: 10px 0;
+    }
+    .dropdown:hover .dropdown-content { display: block; }
+    .dropdown-content a { 
+        padding: 12px 20px; 
+        display: block; 
+        color: #666; 
+        font-size: 14px;
+        border-bottom: 1px solid #f0f0f0;
+        text-decoration: none;
+    }
+    .dropdown-content a:last-child { border-bottom: none; }
+    .dropdown-content a:hover { background: #f8f9fa; color: #00a8e8; }
+    
+    /* Hero Section */
+    .hero { 
+        background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
+        url('https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=1920') center/cover;
+        padding: 80px 0; 
+        text-align: center; 
+        color: #fff;
+        position: relative;
+        min-height: 500px;
+        display: flex;
+        align-items: center;
+    }
+    .hero-content { width: 1200px; margin: 0 auto; }
+    .hero h1 { font-size: 48px; font-weight: 300; margin-bottom: 15px; line-height: 1.2; }
+    .hero h1 strong { font-weight: 700; }
+    .hero p.subtitle { font-size: 20px; font-weight: 300; margin-bottom: 40px; }
+    
+    /* Price Cards */
+    .price-banners { 
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+    .price-banner { 
+        width: 160px; 
+        padding: 20px 15px; 
+        text-align: center;
+        border-radius: 8px;
+        color: #fff;
+        position: relative;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        text-decoration: none;
+        display: block;
+    }
+    .price-banner.blue { background: #00a8e8; }
+    .price-banner.green { background: #7cb342; }
+    .price-banner small { display: block; font-size: 11px; text-transform: uppercase; margin-bottom: 8px; opacity: 0.9; line-height: 1.3; }
+    .price-banner .amount { font-size: 36px; font-weight: 700; line-height: 1; }
+    .price-banner .amount span { font-size: 14px; display: block; font-weight: 400; margin-top: 2px; }
+    .price-banner .btn { 
+        display: inline-block; 
+        margin-top: 12px; 
+        padding: 8px 20px; 
+        border: 1px solid rgba(255,255,255,0.6);
+        border-radius: 4px;
+        color: #fff;
+        text-decoration: none;
+        font-size: 12px;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+    .badge-yeni { 
+        position: absolute; 
+        bottom: -10px; 
+        left: 50%;
+        transform: translateX(-50%);
+        background: #ff9800; 
+        color: #fff; 
+        font-size: 11px; 
+        padding: 4px 12px; 
+        border-radius: 12px;
+        font-weight: 700;
+    }
+    
+    /* Search Box */
+    .search-container { max-width: 700px; margin: 0 auto; }
+    .search-box { 
+        background: #fff; 
+        border-radius: 8px; 
+        overflow: hidden;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    }
+    .search-box input { 
+        width: 100%; 
+        padding: 20px; 
+        border: none; 
+        font-size: 16px; 
+        text-align: center;
+        color: #666;
+        outline: none;
+    }
+    .search-box input::placeholder { color: #999; }
+    .search-buttons { display: flex; }
+    .search-buttons a { 
+        flex: 1; 
+        padding: 18px; 
+        text-align: center; 
+        color: #fff; 
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 15px;
+        text-transform: uppercase;
+    }
+    .search-buttons a:first-child { background: #00a8e8; }
+    .search-buttons a:last-child { background: #7cb342; }
+    .badge-new { 
+        background: #ff9800; 
+        padding: 3px 10px; 
+        border-radius: 12px; 
+        font-size: 11px; 
+        margin-left: 8px;
+        font-weight: 700;
+    }
+    
+    /* Policy Info Section */
+    .policy-info { background: #f5f7fa; padding: 80px 0; text-align: center; }
+    .policy-info h2 { font-size: 36px; font-weight: 300; color: #555; margin-bottom: 20px; }
+    .divider { width: 60px; height: 3px; background: #00a8e8; margin: 0 auto 25px; }
+    .policy-info p { color: #777; font-size: 16px; }
+    .policy-info a { color: #00a8e8; text-decoration: none; font-weight: 600; }
+    
+    /* Products Section - GÜNCELLENMİŞ */
+    .products { padding: 80px 0; text-align: center; background: #fff; }
+    .products h2 { font-size: 36px; font-weight: 300; color: #555; margin-bottom: 50px; }
+    
+    .product-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+    
+    .product-item {
+        background: #fff;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+        transition: transform 0.3s;
+        padding-bottom: 25px;
+        text-decoration: none;
+        display: block;
+    }
+    
+    .product-item:hover { transform: translateY(-5px); }
+    
+    .product-img {
+        height: 220px;
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .product-title {
+        padding: 20px 20px 10px;
+        font-size: 18px;
+        font-weight: 700;
+        color: #00a8e8;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    
+    .product-desc {
+        padding: 0 20px 20px;
+        font-size: 14px;
+        color: #666;
+        line-height: 1.6;
+        text-align: center;
+    }
+    
+    .product-btn {
+        display: inline-block;
+        margin: 0 20px;
+        padding: 12px 20px;
+        background: #7cb342;
+        color: #fff;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 14px;
+        border-radius: 4px;
+        text-align: center;
+        transition: background 0.3s;
+    }
+    
+    .product-btn:hover {
+        background: #00a8e8;
+        color: #fff;
+    }
+    
+    /* Side Button */
+    .side-btn { 
+        position: fixed; 
+        left: 0; 
+        top: 50%; 
+        transform: translateY(-50%) rotate(-90deg);
+        transform-origin: left center;
+        background: #00a8e8;
+        color: #fff;
+        padding: 15px 30px;
+        font-size: 14px;
+        font-weight: 700;
+        text-decoration: none;
+        border-radius: 0 0 8px 8px;
+        margin-left: -45px;
+        white-space: nowrap;
+        z-index: 999;
+    }
+    .side-btn:hover { color: #fff; }
+    
+    /* Footer - 3 KOLONLU GÜNCELLEME */
+    footer { background: #333; color: #fff; padding: 60px 0 30px; }
+    
+    .footer-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+        text-align: left;
+    }
+    
+    .footer-col h4 {
+        color: #00a8e8;
+        font-size: 18px;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+    }
+    
+    .footer-col ul {
+        list-style: none;
+        padding: 0;
+    }
+    
+    .footer-col ul li {
+        margin-bottom: 10px;
+    }
+    
+    .footer-col ul li a {
+        color: #ccc;
+        text-decoration: none;
+        font-size: 13px;
+        transition: color 0.3s;
+    }
+    
+    .footer-col ul li a:hover {
+        color: #00a8e8;
+    }
+    
+    .footer-bottom {
+        text-align: center;
+        margin-top: 50px;
+        padding-top: 30px;
+        border-top: 1px solid #555;
+    }
+    
+    .footer-bottom p {
+        color: #999;
+        font-size: 12px;
+        margin-bottom: 10px;
+        line-height: 1.8;
+    }
+    
+    /* Responsive */
+    @media (max-width: 1200px) {
+        .top-bar .container, header .container, .hero-content { width: 100%; padding: 0 20px; }
+    }
+    @media (max-width: 768px) {
+        nav ul { display: none; }
+        .hero h1 { font-size: 28px; }
+        .product-grid { grid-template-columns: 1fr; padding: 0 20px; }
+        .search-buttons { flex-direction: column; }
+        .side-btn { display: none; }
+        .footer-grid { grid-template-columns: 1fr; text-align: center; }
+    }
+</style>
+</head>
+<body>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div>Sorularınız için hemen arayın. <strong>0850 277 0360</strong></div>
+            <a href="https://sigortam360.com/" target="_blank" rel="noopener noreferrer">Giriş Yap</a>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <a href="https://sigortam360.com/" class="logo" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/logo.png" alt="Sigortam360">
+            </a>
+            <nav>
+                <ul>
+                    <li class="dropdown">
+                        <a href="https://sigortam360.com/arac-sorgula?reportTypeId=10" target="_blank" rel="noopener noreferrer">Sorgular</a>
+                        <div class="dropdown-content">
+                            <a href="https://sigortam360.com/arac-sorgula?reportTypeId=1" target="_blank" rel="noopener noreferrer">Hasar Sorgulama</a>
+                            <a href="https://sigortam360.com/arac-sorgula?reportTypeId=10" target="_blank" rel="noopener noreferrer">Kaskosuz Dönem Sorgulama</a>
+                            <a href="https://sigortam360.com/arac-sorgula?reportTypeId=2" target="_blank" rel="noopener noreferrer">Değişen Parça Sorgulama</a>
+                            <a href="https://sigortam360.com/arac-sorgula?reportTypeId=3" target="_blank" rel="noopener noreferrer">Araç Detay Sorgulama</a>
+                            <a href="https://sigortam360.com/arac-sorgula?reportTypeId=14" target="_blank" rel="noopener noreferrer">TRAMER360 Raporu</a>
+                            <a href="https://online.sbm.org.tr/trm-ktt/cweb/edevlet/login.sbm?referrerUri=%2Ftrm-ktt%2Fpublic%2Fsorgu.sbm" target="_blank" rel="noopener noreferrer">Kaza Tespit Tutanağı Sorgula</a>
+                            <a href="https://online.sbm.org.tr/trm-police/cweb/edevlet/login.sbm?referrerUri=%2Ftrm-police%2Fpublic%2FenYakinAcente%2Fsorgu.sbm" target="_blank" rel="noopener noreferrer">En Yakın Acente Sorgula</a>
+                            <a href="https://sbm.org.tr/tr/uygulama/kaza-yogunluk-haritasi-20" target="_blank" rel="noopener noreferrer">Kaza Yoğunluk Haritası</a>
+                            <a href="https://online.sbm.org.tr/sbm-destektalep/cweb/edevlet/login.sbm?referrerUri=%2Fsbm-destektalep%2Ftalep%2Fsms%2Fcreate.sbm" target="_blank" rel="noopener noreferrer">Hasar Bilgi Düzeltme</a>
+                            <a href="https://online.sbm.org.tr/sbm-destektalep/cweb/edevlet/login.sbm?referrerUri=%2Fsbm-destektalep%2Fpublic%2Fsms%2Fsorgu.sbm" target="_blank" rel="noopener noreferrer">Hasar Bilgi Düzeltme Durum Sorgula</a>
+                            <a href="https://online.sbm.org.tr/ovm-police/cweb/edevlet/login.sbm?referrerUri=%2Fovm-police%2Fpublic%2FsurucuHasarSicilBelge%2Flist.sbm" target="_blank" rel="noopener noreferrer">Sürücü Hasar Sicil Kaydı Sorgula</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="https://sigortam360.com/policeler" target="_blank" rel="noopener noreferrer">Poliçeler</a>
+                        <div class="dropdown-content">
+                            <!-- DOKUNULMADI - AYNEN DURUYOR -->
+                            <a href="https://ortakdogrulama.org.tr/" target="_blank" rel="noopener noreferrer">Kefalet / Bina Tamamlama Sigortası Sorgula</a>
+                            <a href="https://sigortam360.com/Sbm/PublicQuery?reportTypeId=1" target="_blank" rel="noopener noreferrer">Trafik Poliçe Sorgula</a>
+                            <a href="https://sigortam360.com/Sbm/PublicQuery?reportTypeId=2" target="_blank" rel="noopener noreferrer">Kasko Poliçe Sorgula</a>
+                            <a href="https://sigortam360.com/Sbm/PublicQuery?reportTypeId=2" target="_blank" rel="noopener noreferrer">Taşımacılık ve Koltuk Poliçe Sorgula</a>
+                            <a href="https://sigortam360.com/Sbm/PublicQuery?reportTypeId=5" target="_blank" rel="noopener noreferrer">Yeşilkart Poliçe Sorgula</a>
+                            <a href="https://sigortam360.com/Sbm/PublicQuery?reportTypeId=7" target="_blank" rel="noopener noreferrer">Hayat Poliçe Sorgula</a>
+                            <a href="https://sigortam360.com/Sbm/PublicQuery?reportTypeId=8" target="_blank" rel="noopener noreferrer">Sağlık / Seyahat Sağlık Poliçe Sorgula</a>
+                            <a href="https://sigortam360.com/Sbm/PublicQuery?reportTypeId=9" target="_blank" rel="noopener noreferrer">Doktor Sorumluluk Poliçe Sorgula</a>
+                            <a href="https://sigortam360.com/Sbm/PublicQuery?reportTypeId=11" target="_blank" rel="noopener noreferrer">Tehlikeli Madde Tüpgaz Poliçe Sorgula</a>
+                            <a href="https://sigortam360.com/Sbm/PublicQuery?reportTypeId=12" target="_blank" rel="noopener noreferrer">Mesleki Sorumluluk Poliçe Sorgula</a>
+                            <a href="https://sigortam360.com/Sbm/PublicQuery?reportTypeId=13" target="_blank" rel="noopener noreferrer">Ferdi Kaza Poliçe Sorgula</a>
+                            <a href="https://online.sbm.org.tr/trm-police/cweb/edevlet/login.sbm?referrerUri=%2Ftrm-police%2Fpublic%2Ftrfandzytpolicesorgu%2Fsorgu.sbm" target="_blank" rel="noopener noreferrer">Kaza Tarihindeki Poliçe Bilgileri Sorgula</a>
+                            <a href="https://sigortam360.com/Sbm/PublicQuery?reportTypeId=35" target="_blank" rel="noopener noreferrer">Maden Poliçe Sorgula</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="https://sigortam360.com/online-islemler" target="_blank" rel="noopener noreferrer">Online İşlemler</a>
+                        <div class="dropdown-content">
+                            <a href="https://sigortam360.com/" target="_blank" rel="noopener noreferrer">Üye Ol / Giriş Yap</a>
+                            <a href="https://sigortam360.com/" target="_blank" rel="noopener noreferrer">Sorgu Satın Al</a>
+                            <a href="https://sigortam360.com/" target="_blank" rel="noopener noreferrer">Paketler</a>
+                            <a href="https://sigortam360.com/" target="_blank" rel="noopener noreferrer">Kurumsal / Toplu Sorgulama</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="https://sigortam360.com/hakkimizda" target="_blank" rel="noopener noreferrer">Hakkımızda</a>
+                        <div class="dropdown-content">
+                            <a href="https://sigortam360.com/hakkimizda" target="_blank" rel="noopener noreferrer">Hakkımızda</a>
+                            <a href="https://sigortam360.com/iletisim" target="_blank" rel="noopener noreferrer">İletişim</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="https://sigortam360.com/sss" target="_blank" rel="noopener noreferrer">Yardım</a>
+                        <div class="dropdown-content">
+                            <a href="https://sigortam360.com/sss" target="_blank" rel="noopener noreferrer">Sıkça Sorulan Sorular</a>
+                            <a href="https://sigortam360.com/sss" target="_blank" rel="noopener noreferrer">Destek</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Araç ve sigorta sorgulamanın <strong>en hızlı ve güvenilir yolu!</strong></h1>
+            <p class="subtitle">Araç ve sigorta sorgulamanın en hızlı ve güvenilir yolu!</p>
+            
+            <div class="price-banners">
+                <a href="https://sigortam360.com/satin-al/sorgulama" class="price-banner blue" target="_blank" rel="noopener noreferrer">
+                    <small>SORGULAMA<br>SADECE</small>
+                    <div class="amount">220,00<span>TL</span></div>
+                    <span class="btn">SATIN AL</span>
+                </a>
+                <a href="https://sigortam360.com/satin-al/tramer360" class="price-banner green" target="_blank" rel="noopener noreferrer">
+                    <small>TRAMER360<br>SORGULAMA</small>
+                    <div class="amount">660,00<span>TL</span></div>
+                    <span class="badge-yeni">Yeni</span>
+                    <span class="btn">SATIN AL</span>
+                </a>
+            </div>
+            
+            <div class="search-container">
+                <div class="search-box">
+                    <input type="text" placeholder="Aracın plakasını yazın. Ör: 34ABC1234" autocomplete="off">
+                    <div class="search-buttons">
+                        <a href="https://sigortam360.com/hasar-sorgula" target="_blank" rel="noopener noreferrer">HASAR SORGULA</a>
+                        <a href="https://sigortam360.com/tramer360-hasar-sorgula" target="_blank" rel="noopener noreferrer">TRAMER360 HASAR SORGULA <span class="badge-new">Yeni</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Policy Info -->
+    <section class="policy-info">
+        <div class="container">
+            <h2>Güncel Poliçe Bilgileri</h2>
+            <div class="divider"></div>
+            <p>Aktif tüm poliçelerinizi görmek için <a href="https://sigortam360.com/uye-ol" target="_blank" rel="noopener noreferrer">Üye Olun</a> ve e-devlet ile kimlik bilgilerinizi doğrulayın</p>
+        </div>
+    </section>
+
+    <!-- Products - GÜNCELLENMİŞ (detaylı açıklamalar eklendi) -->
+    <section class="products">
+        <div class="container">
+            <h2>Ürünler</h2>
+            <div class="product-grid">
+                <!-- TRAMERSİZ ARAÇ HASAR SORGULAMA -->
+                <div class="product-item">
+                    <div class="product-img" style="background-image: url('https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=400');"></div>
+                    <div class="product-title">TRAMERSİZ ARAÇ HASAR SORGULAMA</div>
+                    <div class="product-desc">
+                        Dilediğiniz aracın daha önce herhangi bir kazaya karışıp karışmadığını, eğer hasar gördüyse tüm bilgilerini ve hasar tutarını öğrenebilirsiniz.
+                    </div>
+                    <a href="https://sigortam360.com/hasar-sorgula" class="product-btn" target="_blank" rel="noopener noreferrer">HASAR SORGULA</a>
+                </div>
+                
+                <!-- KASKOSUZ DÖNEM SORGULAMA -->
+                <div class="product-item">
+                    <div class="product-img" style="background-image: url('https://images.unsplash.com/photo-1502877338535-766e1452684a?w=400');"></div>
+                    <div class="product-title">KASKOSUZ DÖNEM SORGULAMA</div>
+                    <div class="product-desc">
+                        Dilediğiniz aracın trafiğe çıkış tarihini ve trafiğe çıkış tarihinden bugüne kadar kasko yaptırılmayan dönem bilgilerini öğrenebilirsiniz.
+                    </div>
+                    <a href="https://sigortam360.com/kaskosuz-donem-sorgula" class="product-btn" target="_blank" rel="noopener noreferrer">HEMEN SORGULA</a>
+                </div>
+                
+                <!-- DEĞİŞEN PARÇA SORGULAMA -->
+                <div class="product-item">
+                    <div class="product-img" style="background-image: url('https://images.unsplash.com/photo-1569346656677-16611334d5b9?w=400');"></div>
+                    <div class="product-title">DEĞİŞEN PARÇA SORGULAMA</div>
+                    <div class="product-desc">
+                        Dilediğiniz aracın geçmişte değişen parçalarını, parçaların orijinal olup olmadığını, parça adetini, kaza tanımını, tamirat kilometresini, toplam değişen parça tutarını ve toplam işçilik tutarını öğrenebilirsiniz.
+                    </div>
+                    <a href="https://sigortam360.com/degisen-parca-sorgula" class="product-btn" target="_blank" rel="noopener noreferrer">HEMEN SORGULA</a>
+                </div>
+                
+                <!-- ARAÇ DETAY SORGULAMA -->
+                <div class="product-item">
+                    <div class="product-img" style="background-image: url('https://images.unsplash.com/photo-1580273916550-e323be2ae537?w=400');"></div>
+                    <div class="product-title">ARAÇ DETAY SORGULAMA</div>
+                    <div class="product-desc">
+                        Dilediğiniz aracın marka ve modeli, hangi illerde tescil edildiği, kasko bilgileri, trafiğe çıkış tarihi, plaka değişimi olup olmadığı, araç türündeki değişim listesi, son sahip bilgisi ve süresini öğrenebilirsiniz.
+                    </div>
+                    <a href="https://sigortam360.com/arac-detay-sorgula" class="product-btn" target="_blank" rel="noopener noreferrer">HEMEN SORGULA</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Side Button -->
+   
+    <!-- Footer - 3 KOLONLU GÜNCELLENMİŞ -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Kolon 1: Kurumsal -->
+                <div class="footer-col">
+                    <h4>Kurumsal</h4>
+                    <ul>
+                        <li><a href="https://sigortam360.com/hakkimizda" target="_blank" rel="noopener noreferrer">HAKKIMIZDA</a></li>
+                        <li><a href="https://sigortam360.com/iletisim" target="_blank" rel="noopener noreferrer">İLETİŞİM</a></li>
+                        <li><a href="https://sigortam360.com/guvenlik" target="_blank" rel="noopener noreferrer">GÜVENLİK VE GİZLİLİK</a></li>
+                        <li><a href="https://sigortam360.com/kvkk" target="_blank" rel="noopener noreferrer">KİŞİSEL VERİLERİN KORUNMASI</a></li>
+                        <li><a href="https://sigortam360.com/bilgi-edinme" target="_blank" rel="noopener noreferrer">BİLGİ EDİNME</a></li>
+                        <li><a href="https://sigortam360.com/aydinlatma-metni" target="_blank" rel="noopener noreferrer">AYDINLATMA METNİ</a></li>
+                        <li><a href="https://sigortam360.com/cerez-politikasi" target="_blank" rel="noopener noreferrer">ÇEREZ POLİTİKASI</a></li>
+                        <li><a href="https://sigortam360.com/uyelik-sorgulama" target="_blank" rel="noopener noreferrer">ÜYELİK SORGULAMA</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Kolon 2: Sorgular -->
+                <div class="footer-col">
+                    <h4>Sorgular</h4>
+                    <ul>
+                        <li><a href="https://sigortam360.com/tramer360" target="_blank" rel="noopener noreferrer">TRAMER360 HASAR SORGULAMA</a></li>
+                        <li><a href="https://sigortam360.com/hasar-sorgula" target="_blank" rel="noopener noreferrer">HASAR SORGULAMA</a></li>
+                        <li><a href="https://sigortam360.com/degisen-parca-sorgula" target="_blank" rel="noopener noreferrer">DEĞİŞEN PARÇA SORGULAMA</a></li>
+                        <li><a href="https://sigortam360.com/arac-detay-sorgula" target="_blank" rel="noopener noreferrer">ARAÇ DETAY SORGULAMA</a></li>
+                        <li><a href="https://sigortam360.com/kaskosuz-donem-sorgula" target="_blank" rel="noopener noreferrer">KASKOSUZ DÖNEM SORGULAMA</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Kolon 3: Online İşlemler -->
+                <div class="footer-col">
+                    <h4>Online İşlemler</h4>
+                    <ul>
+                        <li><a href="https://sigortam360.com/uye-ol" target="_blank" rel="noopener noreferrer">KAYIT OL / ÜYE GİRİŞİ</a></li>
+                        <li><a href="https://sigortam360.com/sorgu-satin-al" target="_blank" rel="noopener noreferrer">SORGU SATIN AL</a></li>
+                        <li><a href="https://sigortam360.com/kurumsal" target="_blank" rel="noopener noreferrer">KURUMSAL / TOPLU SORGULAMA</a></li>
+                        <li><a href="https://sigortam360.com/sorgular/en-yakin-acente" target="_blank" rel="noopener noreferrer">EN YAKIN ACENTE SORGULA</a></li>
+                        <li><a href="https://sigortam360.com/sorgular/hasar-bilgi-duzeltme" target="_blank" rel="noopener noreferrer">HASAR BİLGİ DÜZELTME</a></li>
+                        <li><a href="https://sigortam360.com/sorgular/hasar-bilgi-duzeltme-durum" target="_blank" rel="noopener noreferrer">HASAR BİLGİ DÜZELTME DURUM SORGULA</a></li>
+                        <li><a href="https://sigortam360.com/sorgular/surucu-hasar-sicil" target="_blank" rel="noopener noreferrer">SÜRÜCÜ HASAR SİCİL SORGULAMA</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <p>&copy; 2026 Sigortam360 - Tüm Hakları Saklıdır</p>
+            </div>
+        </div>
+    </footer>
+<a href="https://ortakdogrulama.org.tr/" target="_blank" class="od-badge">
+        <img src="./assets/img/ortak-dogrulama-badge.png" alt="Ortak Veri Modeli Sorgu">
+        <div class="od-text">
+            <b>ORTAK VERİ MODELİ SORGU</b>
+        </div>
+    </a>
+
+    <!-- JavaScript -->
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const searchInput = document.querySelector('input[type="text"]');
+        if (searchInput) {
+            searchInput.setAttribute('autocomplete', 'off');
+        }
+    });
+    </script>
+
+</body>
+</html>
